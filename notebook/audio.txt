@@ -1,0 +1,137 @@
+So I think we're going to live in a world where there are going to be hundreds of millions
+of billions of different AI agents, eventually probably more AI agents than there are people
+in the world.
+From generative AI to what's known as agentic AIs.
+That agent force is what he's calling it.
+Agent force will be...
+AI agents has become the talk of the town and today I'm going to explain this concept
+in a way that even a high school student can understand it easily.
+Let's start with analogy and then we will go into technical details.
+Let's say you have a restaurant you hire two waiters, Mohan and Madhu.
+Mohan is intelligent and accurate.
+He will go to a customer who is coming to a restaurant and then he will offer the food
+menu.
+The customer will order few things.
+He will accurately note it down and deliver it in a nice manner.
+While Mohan is accurate in his work, he doesn't provide extra suggestions or recommendation.
+Madhu on the other hand is also intelligent and accurate, but he provides extra suggestions.
+For example, if a customer is ordering naan and Indian curry and if the weather is cold
+outside, a Madhu will say, why don't you order this hot tomato soup?
+The weather is cold outside and it will really go well with this dish.
+If the customer is coming again and again, Madhu will recognize their favorite dish and
+they will say, oh, last time you order Hara Bara Kebab, would you like to repeat that?
+So this way Madhu is going one step ahead.
+He's an independent thinker.
+He's providing these suggestions and he's autonomous in the way that he works.
+The first waiter Mohan on the other hand is not autonomous.
+He will do things as directed.
+In this analogy, the second waiter Madhu is an AI agent.
+The first waiter Mohan is a traditional AI system.
+Okay.
+So both are AI system.
+The first one is a traditional AI system.
+The second one is an AI system, which is based on AI agent.
+Here I have the example of a regular chat board where you ask questions such as what
+are your store hours?
+What pizza options do you have?
+You can also place an order.
+This kind of chat board can be easily built using frameworks such as dialog flow, Rasa.
+There are LLM based frameworks to AI agent based chat board system.
+On the other hand, will be autonomous in certain decision making.
+For example, you're visiting this pizza store Pandeji pizza store every Friday evening and
+you're ordering same large veggie pizza with olive topping.
+This chat board can learn from it.
+And when you say I want to place an order, it can look at your history and say, Hey,
+would you like to reorder your usual large pizza?
+You'll say yes.
+It will also have awareness about environment.
+So here it is saying, Hey, it's cold out there.
+Do you want to add hot chocolate?
+So all these suggestions that it is providing, they are not coded into your Python program.
+This is something that this agent is coming up on its own.
+It can also check weather and traffic condition and say, Hey, you want to order a pizza, but
+there is a snowstorm and deliveries might be delayed.
+This is like human.
+If there is a human, he will be aware about environment weather, all of that, and they
+will provide extra suggestions.
+Now let's understand a little more in technical details, how regular AI chat board works.
+Whenever you are asking any question, it will first identify an intent.
+So let's say in my chat board, I have three type of intent, general inquiry, placing order
+refund.
+Based on the question, it will say, Hey, this is a general inquiry intent.
+Now you will be like, okay, you can just do exit sentence matching.
+And you can say, this is a software program varies AI, but this is an AI based system
+because your question might be different instead of saying, what are your store hours?
+You can say, Hey, can you tell me when the store is open?
+So there is no exit word to word matching.
+These two sentences are different, but the meaning is same.
+So if you're using any LLM, such as GPT, or cloud, etc, it will be able to match all
+these sentences, okay?
+You can just say that, hey, LLM, if someone asks questions, which is what are your store
+hours, or a similar question in English language, then the intent is general inquiry.
+Once you tell that to LLM, next time, if a person asks questions differently, then also
+it will be able to match that intent.
+A second question you can ask is, can you place an order with large veggie pizza or
+leaven spinach topping, it will match the intent, say place order, not only that it
+will extract the meaningful information, which is what is my order size, my type toppings,
+etc.
+And it will call an appropriate code or API or let's say Python function, which you can
+run and place the order and insert a record in database and so on.
+So this is a traditional chatbot.
+This doesn't use any agent, etc.
+If you want to learn more in detail, I have this free YouTube video where I build the
+exact same chatbot using dialog flow framework.
+Now let's see how AI agent chatbot will work.
+So first of all, AI agent chatbot will have exact same capabilities as the regular chatbot.
+But in addition, it will have extra capabilities.
+So when you give a sentence, it will be able to identify the intent, it will extract the
+information, call the Python function API and so on.
+But in addition, it will have access to something called tools.
+Now when I say tools, let's say weather API is one type of tool.
+So it will go check weather API and say there is a snowstorm and you know, there is a traffic
+deliveries are delayed, then it will give you this kind of response.
+It will say, hey, due to snowstorm deliveries might be delayed.
+It may have access to another tool such as a database.
+Database contains all the past records from the same customer.
+Now you can figure out that this customer is ordering same pizza every Friday at 7 p.m.
+or evening.
+Then you will say, hey, would you like to reorder your usual large pizza with olive
+toppings?
+So see, this is intelligent and autonomous in your code.
+You're not return that when person says place an order, you should give this as a response.
+OK, in your code, you have not written that, but the agent figures this thing out on his
+own and provides suggestion.
+It can have access to web search.
+It can have access to a variety of APIs.
+So these tools are something that you can define when you are writing code for agent.
+So agent solution is something for which you have to write code, obviously, but you don't
+type all this instruction that if person places an order in a person has a same history
+Friday 7 p.m. large veggie, then just repeat that.
+OK, you are just providing all these tools, everything.
+And this suggestion is something that this agent comes up on its own.
+I give an example of an AI chat board, but there are a variety of solutions that can
+be a recommendation engine that can be a document search.
+You know, you can build a variety of solutions.
+Chat board is just one category of AI solutions to summarize.
+The main thing in AI agent is autonomy, independent thinking.
+Obviously, there will be some limitations on autonomy.
+Your chat board cannot say, hey, I will place your order for free and your family and friends.
+I will give everything for free.
+That kind of autonomy you can't give to the agents.
+So when you are building agents by writing code, you will have some kind of control over
+it.
+If you cannot control the AI agent will be autonomous.
+It's like your dog and you have a lease, right?
+So dog can roam around, but you have a lease.
+So the area where it can go, that area is limited, right?
+Let's say you have a two meter long lease or the string, you know, that you tie at dog's
+neck.
+The dog can roam around in that two meter radius.
+So it is autonomous.
+But on top of that, there is some control that you're imposing.
+There are frameworks such as Langraph, Microsoft autogen, crew AI, etc, that you can use to
+build AI agents.
+I'm going to be publishing more videos on AI agents in the coming time.
+So please keep an eye.
+And if you like this video, then please give it a thumbs up, share it with your friends.
+If you have any comments, there is a comment box below.

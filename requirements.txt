@@ -2,4 +2,5 @@ Flask
 jupyter
 ibm_watson
 ffmpeg
+git+https://github.com/openai/whisper.git 
 # -e .

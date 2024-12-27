@@ -1,0 +1,138 @@
+start	end	text
+0	2980	So I think we're going to live in a world where there are going to be hundreds of millions
+2980	7800	of billions of different AI agents, eventually probably more AI agents than there are people
+7800	8800	in the world.
+8800	13440	From generative AI to what's known as agentic AIs.
+13440	15960	That agent force is what he's calling it.
+15960	16960	Agent force will be...
+16960	22600	AI agents has become the talk of the town and today I'm going to explain this concept
+22600	26600	in a way that even a high school student can understand it easily.
+26600	30600	Let's start with analogy and then we will go into technical details.
+30600	35040	Let's say you have a restaurant you hire two waiters, Mohan and Madhu.
+35040	36600	Mohan is intelligent and accurate.
+36600	41640	He will go to a customer who is coming to a restaurant and then he will offer the food
+41640	42640	menu.
+42640	44680	The customer will order few things.
+44680	49000	He will accurately note it down and deliver it in a nice manner.
+49000	55200	While Mohan is accurate in his work, he doesn't provide extra suggestions or recommendation.
+55200	61040	Madhu on the other hand is also intelligent and accurate, but he provides extra suggestions.
+61040	66440	For example, if a customer is ordering naan and Indian curry and if the weather is cold
+66440	71840	outside, a Madhu will say, why don't you order this hot tomato soup?
+71840	75240	The weather is cold outside and it will really go well with this dish.
+75240	80680	If the customer is coming again and again, Madhu will recognize their favorite dish and
+80680	85200	they will say, oh, last time you order Hara Bara Kebab, would you like to repeat that?
+85200	88640	So this way Madhu is going one step ahead.
+88640	90800	He's an independent thinker.
+90800	95720	He's providing these suggestions and he's autonomous in the way that he works.
+95720	100000	The first waiter Mohan on the other hand is not autonomous.
+100000	101960	He will do things as directed.
+101960	107360	In this analogy, the second waiter Madhu is an AI agent.
+107360	111760	The first waiter Mohan is a traditional AI system.
+111760	112760	Okay.
+112760	114380	So both are AI system.
+114380	116620	The first one is a traditional AI system.
+116620	120820	The second one is an AI system, which is based on AI agent.
+120820	125760	Here I have the example of a regular chat board where you ask questions such as what
+125760	127500	are your store hours?
+127500	129620	What pizza options do you have?
+129620	131480	You can also place an order.
+131480	136880	This kind of chat board can be easily built using frameworks such as dialog flow, Rasa.
+136880	142420	There are LLM based frameworks to AI agent based chat board system.
+142420	147820	On the other hand, will be autonomous in certain decision making.
+147820	153800	For example, you're visiting this pizza store Pandeji pizza store every Friday evening and
+153800	158600	you're ordering same large veggie pizza with olive topping.
+158600	160740	This chat board can learn from it.
+160740	164700	And when you say I want to place an order, it can look at your history and say, Hey,
+164700	168740	would you like to reorder your usual large pizza?
+168740	169980	You'll say yes.
+169980	172480	It will also have awareness about environment.
+172480	175140	So here it is saying, Hey, it's cold out there.
+175140	178000	Do you want to add hot chocolate?
+178000	184980	So all these suggestions that it is providing, they are not coded into your Python program.
+184980	188980	This is something that this agent is coming up on its own.
+188980	193600	It can also check weather and traffic condition and say, Hey, you want to order a pizza, but
+193600	197860	there is a snowstorm and deliveries might be delayed.
+197860	198860	This is like human.
+198860	203740	If there is a human, he will be aware about environment weather, all of that, and they
+203740	206160	will provide extra suggestions.
+206160	212260	Now let's understand a little more in technical details, how regular AI chat board works.
+212260	217460	Whenever you are asking any question, it will first identify an intent.
+217460	222340	So let's say in my chat board, I have three type of intent, general inquiry, placing order
+222340	223340	refund.
+223340	229880	Based on the question, it will say, Hey, this is a general inquiry intent.
+229880	234520	Now you will be like, okay, you can just do exit sentence matching.
+234520	239580	And you can say, this is a software program varies AI, but this is an AI based system
+239580	243900	because your question might be different instead of saying, what are your store hours?
+243900	246760	You can say, Hey, can you tell me when the store is open?
+246760	248860	So there is no exit word to word matching.
+248860	251980	These two sentences are different, but the meaning is same.
+251980	258940	So if you're using any LLM, such as GPT, or cloud, etc, it will be able to match all
+258940	260600	these sentences, okay?
+260600	265660	You can just say that, hey, LLM, if someone asks questions, which is what are your store
+265660	272300	hours, or a similar question in English language, then the intent is general inquiry.
+272300	278700	Once you tell that to LLM, next time, if a person asks questions differently, then also
+278700	281300	it will be able to match that intent.
+281300	286120	A second question you can ask is, can you place an order with large veggie pizza or
+286120	291480	leaven spinach topping, it will match the intent, say place order, not only that it
+291480	297100	will extract the meaningful information, which is what is my order size, my type toppings,
+297100	298100	etc.
+298100	303540	And it will call an appropriate code or API or let's say Python function, which you can
+303540	307880	run and place the order and insert a record in database and so on.
+307880	309920	So this is a traditional chatbot.
+309920	312300	This doesn't use any agent, etc.
+312300	317240	If you want to learn more in detail, I have this free YouTube video where I build the
+317240	321000	exact same chatbot using dialog flow framework.
+321000	323880	Now let's see how AI agent chatbot will work.
+323880	330480	So first of all, AI agent chatbot will have exact same capabilities as the regular chatbot.
+330480	333840	But in addition, it will have extra capabilities.
+333840	337920	So when you give a sentence, it will be able to identify the intent, it will extract the
+337920	341800	information, call the Python function API and so on.
+341800	347080	But in addition, it will have access to something called tools.
+347080	351120	Now when I say tools, let's say weather API is one type of tool.
+351120	357040	So it will go check weather API and say there is a snowstorm and you know, there is a traffic
+357040	360280	deliveries are delayed, then it will give you this kind of response.
+360280	365240	It will say, hey, due to snowstorm deliveries might be delayed.
+365240	369600	It may have access to another tool such as a database.
+369600	372680	Database contains all the past records from the same customer.
+372680	378000	Now you can figure out that this customer is ordering same pizza every Friday at 7 p.m.
+378000	379120	or evening.
+379120	383000	Then you will say, hey, would you like to reorder your usual large pizza with olive
+383000	384000	toppings?
+384000	387840	So see, this is intelligent and autonomous in your code.
+387840	393800	You're not return that when person says place an order, you should give this as a response.
+393800	399320	OK, in your code, you have not written that, but the agent figures this thing out on his
+399320	402020	own and provides suggestion.
+402020	404540	It can have access to web search.
+404540	407360	It can have access to a variety of APIs.
+407360	413800	So these tools are something that you can define when you are writing code for agent.
+413800	419920	So agent solution is something for which you have to write code, obviously, but you don't
+419920	425220	type all this instruction that if person places an order in a person has a same history
+425220	428600	Friday 7 p.m. large veggie, then just repeat that.
+428600	431600	OK, you are just providing all these tools, everything.
+431600	436960	And this suggestion is something that this agent comes up on its own.
+436960	442700	I give an example of an AI chat board, but there are a variety of solutions that can
+442700	446440	be a recommendation engine that can be a document search.
+446440	449720	You know, you can build a variety of solutions.
+449720	454500	Chat board is just one category of AI solutions to summarize.
+454500	459880	The main thing in AI agent is autonomy, independent thinking.
+459880	463580	Obviously, there will be some limitations on autonomy.
+463580	467880	Your chat board cannot say, hey, I will place your order for free and your family and friends.
+467880	469720	I will give everything for free.
+469720	473160	That kind of autonomy you can't give to the agents.
+473160	478520	So when you are building agents by writing code, you will have some kind of control over
+478520	479520	it.
+479520	483860	If you cannot control the AI agent will be autonomous.
+483860	486680	It's like your dog and you have a lease, right?
+486680	489840	So dog can roam around, but you have a lease.
+489840	493580	So the area where it can go, that area is limited, right?
+493580	499840	Let's say you have a two meter long lease or the string, you know, that you tie at dog's
+499840	500840	neck.
+500840	503140	The dog can roam around in that two meter radius.
+503140	504340	So it is autonomous.
+504340	508400	But on top of that, there is some control that you're imposing.
+508400	514720	There are frameworks such as Langraph, Microsoft autogen, crew AI, etc, that you can use to
+514720	516340	build AI agents.
+516340	520200	I'm going to be publishing more videos on AI agents in the coming time.
+520200	522160	So please keep an eye.
+522160	525800	And if you like this video, then please give it a thumbs up, share it with your friends.
+525800	528400	If you have any comments, there is a comment box below.

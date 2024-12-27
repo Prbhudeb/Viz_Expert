@@ -1,0 +1,548 @@
+1
+00:00:00,000 --> 00:00:02,980
+So I think we're going to live in a world where there are going to be hundreds of millions
+
+2
+00:00:02,980 --> 00:00:07,800
+of billions of different AI agents, eventually probably more AI agents than there are people
+
+3
+00:00:07,800 --> 00:00:08,800
+in the world.
+
+4
+00:00:08,800 --> 00:00:13,440
+From generative AI to what's known as agentic AIs.
+
+5
+00:00:13,440 --> 00:00:15,960
+That agent force is what he's calling it.
+
+6
+00:00:15,960 --> 00:00:16,960
+Agent force will be...
+
+7
+00:00:16,960 --> 00:00:22,600
+AI agents has become the talk of the town and today I'm going to explain this concept
+
+8
+00:00:22,600 --> 00:00:26,600
+in a way that even a high school student can understand it easily.
+
+9
+00:00:26,600 --> 00:00:30,600
+Let's start with analogy and then we will go into technical details.
+
+10
+00:00:30,600 --> 00:00:35,040
+Let's say you have a restaurant you hire two waiters, Mohan and Madhu.
+
+11
+00:00:35,040 --> 00:00:36,600
+Mohan is intelligent and accurate.
+
+12
+00:00:36,600 --> 00:00:41,640
+He will go to a customer who is coming to a restaurant and then he will offer the food
+
+13
+00:00:41,640 --> 00:00:42,640
+menu.
+
+14
+00:00:42,640 --> 00:00:44,680
+The customer will order few things.
+
+15
+00:00:44,680 --> 00:00:49,000
+He will accurately note it down and deliver it in a nice manner.
+
+16
+00:00:49,000 --> 00:00:55,200
+While Mohan is accurate in his work, he doesn't provide extra suggestions or recommendation.
+
+17
+00:00:55,200 --> 00:01:01,040
+Madhu on the other hand is also intelligent and accurate, but he provides extra suggestions.
+
+18
+00:01:01,040 --> 00:01:06,440
+For example, if a customer is ordering naan and Indian curry and if the weather is cold
+
+19
+00:01:06,440 --> 00:01:11,840
+outside, a Madhu will say, why don't you order this hot tomato soup?
+
+20
+00:01:11,840 --> 00:01:15,240
+The weather is cold outside and it will really go well with this dish.
+
+21
+00:01:15,240 --> 00:01:20,680
+If the customer is coming again and again, Madhu will recognize their favorite dish and
+
+22
+00:01:20,680 --> 00:01:25,200
+they will say, oh, last time you order Hara Bara Kebab, would you like to repeat that?
+
+23
+00:01:25,200 --> 00:01:28,640
+So this way Madhu is going one step ahead.
+
+24
+00:01:28,640 --> 00:01:30,800
+He's an independent thinker.
+
+25
+00:01:30,800 --> 00:01:35,720
+He's providing these suggestions and he's autonomous in the way that he works.
+
+26
+00:01:35,720 --> 00:01:40,000
+The first waiter Mohan on the other hand is not autonomous.
+
+27
+00:01:40,000 --> 00:01:41,960
+He will do things as directed.
+
+28
+00:01:41,960 --> 00:01:47,360
+In this analogy, the second waiter Madhu is an AI agent.
+
+29
+00:01:47,360 --> 00:01:51,760
+The first waiter Mohan is a traditional AI system.
+
+30
+00:01:51,760 --> 00:01:52,760
+Okay.
+
+31
+00:01:52,760 --> 00:01:54,380
+So both are AI system.
+
+32
+00:01:54,380 --> 00:01:56,620
+The first one is a traditional AI system.
+
+33
+00:01:56,620 --> 00:02:00,820
+The second one is an AI system, which is based on AI agent.
+
+34
+00:02:00,820 --> 00:02:05,760
+Here I have the example of a regular chat board where you ask questions such as what
+
+35
+00:02:05,760 --> 00:02:07,500
+are your store hours?
+
+36
+00:02:07,500 --> 00:02:09,620
+What pizza options do you have?
+
+37
+00:02:09,620 --> 00:02:11,480
+You can also place an order.
+
+38
+00:02:11,480 --> 00:02:16,880
+This kind of chat board can be easily built using frameworks such as dialog flow, Rasa.
+
+39
+00:02:16,880 --> 00:02:22,420
+There are LLM based frameworks to AI agent based chat board system.
+
+40
+00:02:22,420 --> 00:02:27,820
+On the other hand, will be autonomous in certain decision making.
+
+41
+00:02:27,820 --> 00:02:33,800
+For example, you're visiting this pizza store Pandeji pizza store every Friday evening and
+
+42
+00:02:33,800 --> 00:02:38,600
+you're ordering same large veggie pizza with olive topping.
+
+43
+00:02:38,600 --> 00:02:40,740
+This chat board can learn from it.
+
+44
+00:02:40,740 --> 00:02:44,700
+And when you say I want to place an order, it can look at your history and say, Hey,
+
+45
+00:02:44,700 --> 00:02:48,740
+would you like to reorder your usual large pizza?
+
+46
+00:02:48,740 --> 00:02:49,980
+You'll say yes.
+
+47
+00:02:49,980 --> 00:02:52,480
+It will also have awareness about environment.
+
+48
+00:02:52,480 --> 00:02:55,140
+So here it is saying, Hey, it's cold out there.
+
+49
+00:02:55,140 --> 00:02:58,000
+Do you want to add hot chocolate?
+
+50
+00:02:58,000 --> 00:03:04,980
+So all these suggestions that it is providing, they are not coded into your Python program.
+
+51
+00:03:04,980 --> 00:03:08,980
+This is something that this agent is coming up on its own.
+
+52
+00:03:08,980 --> 00:03:13,600
+It can also check weather and traffic condition and say, Hey, you want to order a pizza, but
+
+53
+00:03:13,600 --> 00:03:17,860
+there is a snowstorm and deliveries might be delayed.
+
+54
+00:03:17,860 --> 00:03:18,860
+This is like human.
+
+55
+00:03:18,860 --> 00:03:23,740
+If there is a human, he will be aware about environment weather, all of that, and they
+
+56
+00:03:23,740 --> 00:03:26,160
+will provide extra suggestions.
+
+57
+00:03:26,160 --> 00:03:32,260
+Now let's understand a little more in technical details, how regular AI chat board works.
+
+58
+00:03:32,260 --> 00:03:37,460
+Whenever you are asking any question, it will first identify an intent.
+
+59
+00:03:37,460 --> 00:03:42,340
+So let's say in my chat board, I have three type of intent, general inquiry, placing order
+
+60
+00:03:42,340 --> 00:03:43,340
+refund.
+
+61
+00:03:43,340 --> 00:03:49,880
+Based on the question, it will say, Hey, this is a general inquiry intent.
+
+62
+00:03:49,880 --> 00:03:54,520
+Now you will be like, okay, you can just do exit sentence matching.
+
+63
+00:03:54,520 --> 00:03:59,580
+And you can say, this is a software program varies AI, but this is an AI based system
+
+64
+00:03:59,580 --> 00:04:03,900
+because your question might be different instead of saying, what are your store hours?
+
+65
+00:04:03,900 --> 00:04:06,760
+You can say, Hey, can you tell me when the store is open?
+
+66
+00:04:06,760 --> 00:04:08,860
+So there is no exit word to word matching.
+
+67
+00:04:08,860 --> 00:04:11,980
+These two sentences are different, but the meaning is same.
+
+68
+00:04:11,980 --> 00:04:18,940
+So if you're using any LLM, such as GPT, or cloud, etc, it will be able to match all
+
+69
+00:04:18,940 --> 00:04:20,600
+these sentences, okay?
+
+70
+00:04:20,600 --> 00:04:25,660
+You can just say that, hey, LLM, if someone asks questions, which is what are your store
+
+71
+00:04:25,660 --> 00:04:32,300
+hours, or a similar question in English language, then the intent is general inquiry.
+
+72
+00:04:32,300 --> 00:04:38,700
+Once you tell that to LLM, next time, if a person asks questions differently, then also
+
+73
+00:04:38,700 --> 00:04:41,300
+it will be able to match that intent.
+
+74
+00:04:41,300 --> 00:04:46,120
+A second question you can ask is, can you place an order with large veggie pizza or
+
+75
+00:04:46,120 --> 00:04:51,480
+leaven spinach topping, it will match the intent, say place order, not only that it
+
+76
+00:04:51,480 --> 00:04:57,100
+will extract the meaningful information, which is what is my order size, my type toppings,
+
+77
+00:04:57,100 --> 00:04:58,100
+etc.
+
+78
+00:04:58,100 --> 00:05:03,540
+And it will call an appropriate code or API or let's say Python function, which you can
+
+79
+00:05:03,540 --> 00:05:07,880
+run and place the order and insert a record in database and so on.
+
+80
+00:05:07,880 --> 00:05:09,920
+So this is a traditional chatbot.
+
+81
+00:05:09,920 --> 00:05:12,300
+This doesn't use any agent, etc.
+
+82
+00:05:12,300 --> 00:05:17,240
+If you want to learn more in detail, I have this free YouTube video where I build the
+
+83
+00:05:17,240 --> 00:05:21,000
+exact same chatbot using dialog flow framework.
+
+84
+00:05:21,000 --> 00:05:23,880
+Now let's see how AI agent chatbot will work.
+
+85
+00:05:23,880 --> 00:05:30,480
+So first of all, AI agent chatbot will have exact same capabilities as the regular chatbot.
+
+86
+00:05:30,480 --> 00:05:33,840
+But in addition, it will have extra capabilities.
+
+87
+00:05:33,840 --> 00:05:37,920
+So when you give a sentence, it will be able to identify the intent, it will extract the
+
+88
+00:05:37,920 --> 00:05:41,800
+information, call the Python function API and so on.
+
+89
+00:05:41,800 --> 00:05:47,080
+But in addition, it will have access to something called tools.
+
+90
+00:05:47,080 --> 00:05:51,120
+Now when I say tools, let's say weather API is one type of tool.
+
+91
+00:05:51,120 --> 00:05:57,040
+So it will go check weather API and say there is a snowstorm and you know, there is a traffic
+
+92
+00:05:57,040 --> 00:06:00,280
+deliveries are delayed, then it will give you this kind of response.
+
+93
+00:06:00,280 --> 00:06:05,240
+It will say, hey, due to snowstorm deliveries might be delayed.
+
+94
+00:06:05,240 --> 00:06:09,600
+It may have access to another tool such as a database.
+
+95
+00:06:09,600 --> 00:06:12,680
+Database contains all the past records from the same customer.
+
+96
+00:06:12,680 --> 00:06:18,000
+Now you can figure out that this customer is ordering same pizza every Friday at 7 p.m.
+
+97
+00:06:18,000 --> 00:06:19,120
+or evening.
+
+98
+00:06:19,120 --> 00:06:23,000
+Then you will say, hey, would you like to reorder your usual large pizza with olive
+
+99
+00:06:23,000 --> 00:06:24,000
+toppings?
+
+100
+00:06:24,000 --> 00:06:27,840
+So see, this is intelligent and autonomous in your code.
+
+101
+00:06:27,840 --> 00:06:33,800
+You're not return that when person says place an order, you should give this as a response.
+
+102
+00:06:33,800 --> 00:06:39,320
+OK, in your code, you have not written that, but the agent figures this thing out on his
+
+103
+00:06:39,320 --> 00:06:42,020
+own and provides suggestion.
+
+104
+00:06:42,020 --> 00:06:44,540
+It can have access to web search.
+
+105
+00:06:44,540 --> 00:06:47,360
+It can have access to a variety of APIs.
+
+106
+00:06:47,360 --> 00:06:53,800
+So these tools are something that you can define when you are writing code for agent.
+
+107
+00:06:53,800 --> 00:06:59,920
+So agent solution is something for which you have to write code, obviously, but you don't
+
+108
+00:06:59,920 --> 00:07:05,220
+type all this instruction that if person places an order in a person has a same history
+
+109
+00:07:05,220 --> 00:07:08,600
+Friday 7 p.m. large veggie, then just repeat that.
+
+110
+00:07:08,600 --> 00:07:11,600
+OK, you are just providing all these tools, everything.
+
+111
+00:07:11,600 --> 00:07:16,960
+And this suggestion is something that this agent comes up on its own.
+
+112
+00:07:16,960 --> 00:07:22,700
+I give an example of an AI chat board, but there are a variety of solutions that can
+
+113
+00:07:22,700 --> 00:07:26,440
+be a recommendation engine that can be a document search.
+
+114
+00:07:26,440 --> 00:07:29,720
+You know, you can build a variety of solutions.
+
+115
+00:07:29,720 --> 00:07:34,500
+Chat board is just one category of AI solutions to summarize.
+
+116
+00:07:34,500 --> 00:07:39,880
+The main thing in AI agent is autonomy, independent thinking.
+
+117
+00:07:39,880 --> 00:07:43,580
+Obviously, there will be some limitations on autonomy.
+
+118
+00:07:43,580 --> 00:07:47,880
+Your chat board cannot say, hey, I will place your order for free and your family and friends.
+
+119
+00:07:47,880 --> 00:07:49,720
+I will give everything for free.
+
+120
+00:07:49,720 --> 00:07:53,160
+That kind of autonomy you can't give to the agents.
+
+121
+00:07:53,160 --> 00:07:58,520
+So when you are building agents by writing code, you will have some kind of control over
+
+122
+00:07:58,520 --> 00:07:59,520
+it.
+
+123
+00:07:59,520 --> 00:08:03,860
+If you cannot control the AI agent will be autonomous.
+
+124
+00:08:03,860 --> 00:08:06,680
+It's like your dog and you have a lease, right?
+
+125
+00:08:06,680 --> 00:08:09,840
+So dog can roam around, but you have a lease.
+
+126
+00:08:09,840 --> 00:08:13,580
+So the area where it can go, that area is limited, right?
+
+127
+00:08:13,580 --> 00:08:19,840
+Let's say you have a two meter long lease or the string, you know, that you tie at dog's
+
+128
+00:08:19,840 --> 00:08:20,840
+neck.
+
+129
+00:08:20,840 --> 00:08:23,140
+The dog can roam around in that two meter radius.
+
+130
+00:08:23,140 --> 00:08:24,340
+So it is autonomous.
+
+131
+00:08:24,340 --> 00:08:28,400
+But on top of that, there is some control that you're imposing.
+
+132
+00:08:28,400 --> 00:08:34,720
+There are frameworks such as Langraph, Microsoft autogen, crew AI, etc, that you can use to
+
+133
+00:08:34,720 --> 00:08:36,340
+build AI agents.
+
+134
+00:08:36,340 --> 00:08:40,200
+I'm going to be publishing more videos on AI agents in the coming time.
+
+135
+00:08:40,200 --> 00:08:42,160
+So please keep an eye.
+
+136
+00:08:42,160 --> 00:08:45,800
+And if you like this video, then please give it a thumbs up, share it with your friends.
+
+137
+00:08:45,800 --> 00:08:48,400
+If you have any comments, there is a comment box below.
+
