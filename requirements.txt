@@ -1,0 +1,5 @@
+Flask
+jupyter
+ibm_watson
+ffmpeg
+# -e .
